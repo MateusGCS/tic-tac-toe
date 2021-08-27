@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta  charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content='ie=edge'>
+
+        <link rel='stylesheet' type='text/css' href='./css/style.css'>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+        <title>Jogo da Velha</title>
+    </head>
+    <body>
+        
+
+        <div class='jogo'>
+            <div class='popupbox'>
+                    <div class='popup'>
+                        <h1>Jogo da Velha</h1>
+                            <h2>Escolha seu jogador</h2> <p></p>
+            
+                            <div class='jogadores'>
+                                <div id='jogador1'></div><span>vs</span>
+                                <div id='jogador2'></div>
+                            </div>
+                    </div>
+            </div>
+
+            <div class='stage'>
+                    <div id='0' class='mesa'></div> 
+                    <div id='1' class='mesa'></div>
+                    <div id='2' class='mesa'></div>
+            </div>
+
+            <div class='stage'>
+                    <div id='3' class='mesa'> </div>
+                    <div id='4' class='mesa'></div>
+                    <div id='5' class='mesa'></div>
+            </div>
+
+            <div class='stage'>
+                    <div id='6' class='mesa'> </div>
+                    <div id='7' class='mesa'></div>
+                    <div id='8' class='mesa'></div>
+            </div>
+            
+            <div class='scoreboard'>
+                <div class='imgp1'></div>
+                <div class='contador' id='p1'></div>
+                    <span>vs</span>
+                 <div class='contador' id='p2'></div>
+                 <div class='imgp2'></div>
+
+            </div>
+     
+            <button type='submit' onclick="resetAll()">Resetar</button>
+        </div>
+
+       
+
+    <script src='./scripts/game.js'></script>    
+    <script src='./scripts/interface.js'></script>    
+    </body>
+</html>
